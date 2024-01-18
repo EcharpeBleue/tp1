@@ -1,7 +1,17 @@
 .imgBox{
-    background-color: blanchedalmond;
+    background-color: olive;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%; /* Adjust the width as needed */
+    border-radius: 2%; /* Add border-radius property */
 }
-img{
+.pageTitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.firstImg{
     max-width: 15%;
 }
 .navMenu{
@@ -10,34 +20,54 @@ img{
     padding: 1%;
 }
 .textBox{
-    background-color: cornflowerblue;
-    min-height:1200px;
+    background-color: palegoldenrod;
+    min-height: 75rem;
+    border-radius: 2%; /* Add border-radius property */
+    padding: 2rem 2rem 2rem 2rem;
+    font-size:xx-large;
 }
  /* Style the navbar */
  #navbar {
     overflow: hidden;
     background-color: #333;
+    border-radius: 50%; /* Add border-radius property */
   }
   
   /* Navbar links */
 #navbar a {
-    float: left;
-    display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     color: #f2f2f2;
     text-align: center;
     padding: 14px;
     text-decoration: none;
   }
   
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
   .sticky {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
   }
+  #navbar a:hover {
+    background-color: yellow;
+    color: black;
+  }
+  p{
+    padding-top: 175px;
+  }
+  .paragraphContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .paragraphContainer img {
+    flex-basis: 50%; /* Adjust the width as needed */
+  }
+  .paragraphContainer p {
+    display: flex;
+    justify-content: space-around;
+  }
+  #textImg{
+    max-width: 50%;
+}
